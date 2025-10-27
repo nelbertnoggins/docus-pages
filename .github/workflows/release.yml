@@ -13,6 +13,24 @@ permissions:
 jobs:
   release-please:
     runs-on: ubuntu-latest
-    if: false
+    outputs:
+      website--release_recreated: ${{ steps.release-please.outputs.website--release_created }}
+      website--sha: ${{ steps.release-please.outputs.website--sha }}
     steps:
       - uses: googleapis/release-please-action@v4
+
+  publish-website:
+    needs: release-please
+    runs-on: ubuntu-latest
+    if: needs.release-please.outputs.website--release_recreated == 'true'
+    steps:
+      - name: Trigger Workflow
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'deploy-website.yml',
+              ref: ${{ needs.release-please.outputs.website--sha }},
+            })
