@@ -2,7 +2,8 @@
   "name": "docus-starter",
   "scripts": {
     "dev": "nuxt dev --extends docus",
-    "build": "nuxt build --extends docus"
+    "build": "nuxt build --extends docus",
+    "gh-pages": "nuxt build --extends docus --preset github_pages"
   },
   "dependencies": {
     "docus": "latest",
