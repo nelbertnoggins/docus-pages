@@ -1,9 +1,10 @@
 name: Deploy to GitHub Pages
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
+#  Uncomment the following lines to enable automatic deployment on pushes to main branch
+#  push:
+#    branches:
+#      - main
 
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
