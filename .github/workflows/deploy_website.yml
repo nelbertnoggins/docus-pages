@@ -40,13 +40,11 @@ jobs:
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
-        if: false
         with:
           path: ./website/.output/public
 
   deploy:
     needs: build
-    if: false
     permissions:
       pages: write
       id-token: write
