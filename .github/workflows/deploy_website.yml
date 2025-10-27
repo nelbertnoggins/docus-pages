@@ -4,11 +4,20 @@ on:
   push:
     branches:
       - main
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     env:
-      NODE_OPTIONS: "--max-old-space-size=6000"
+      NODE_OPTIONS: "--max-old-space-size=4000"
     steps:
       - name: checkout repo
         uses: actions/checkout@v5
@@ -22,13 +31,16 @@ jobs:
           node-version: "24"
       
       - name: install deps
-        run: yarn --cwd website install
+        working-directory: ./website
+        run: yarn install
       
       - name: build website
-        run: yarn --cwd website nuxt build --preset github_pages
+        working-directory: ./website
+        run: yarn nuxt build --preset github_pages
       
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
+        if: false
         with:
           path: ./website/.output/public
 
