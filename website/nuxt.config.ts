@@ -10,4 +10,10 @@ export default defineNuxtConfig({
       name: 'Français',
     }],
   },
+  robots: { 
+    robotsTxt: false 
+  },
+  llms:{
+    domain: process.env.LLMS_DOMAIN,
+  }
 })
