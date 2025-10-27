@@ -36,7 +36,7 @@ jobs:
       
       - name: build website
         working-directory: ./website
-        run: yarn nuxt build --preset github_pages
+        run: yarn run gh-pages
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
