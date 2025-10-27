@@ -1,0 +1,48 @@
+name: Deploy to GitHub Pages
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      NODE_OPTIONS: "--max-old-space-size=6000"
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v5
+
+      - name: enable corepack
+        run: corepack enable
+
+      - name: setup node
+        uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+      
+      - name: install deps
+        run: yarn --cwd website install
+      
+      - name: build website
+        run: yarn --cwd website nuxt build --preset github_pages
+      
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./website/.output/public
+
+  deploy:
+    needs: build
+    if: false
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

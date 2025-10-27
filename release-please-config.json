@@ -15,16 +15,8 @@
     { "type": "ci", "section": "Continuous Integration", "hidden": true }
   ],
   "packages": {
-    "workflows": {
-      "path": ".github/workflows",
-      "release-type": "simple"
-    },
-    "actions": {
-      "path": ".github/actions",
-      "release-type": "simple"
-    },
-    "gh-pages": {
-      "path": "static-site",
+    "website": {
+      "path": "website",
       "release-type": "simple"
     }
   }
