@@ -24,7 +24,7 @@ jobs:
   publish-website:
     needs: release-please
     runs-on: ubuntu-latest
-#    if: ${{ needs.release-please.outputs.website--release_created == 'true' }}
+    if: ${{ needs.release-please.outputs.website--release_created == 'true' }}
     steps:
       - name: Trigger Workflow
         uses: actions/github-script@v7
