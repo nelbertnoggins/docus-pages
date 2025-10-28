@@ -18,8 +18,6 @@ jobs:
       website--sha: ${{ steps.release-please.outputs.website--sha }}
     steps:
       - uses: googleapis/release-please-action@v4
-        with:
-          include-component-in-tag: true
 
   publish-website:
     needs: release-please

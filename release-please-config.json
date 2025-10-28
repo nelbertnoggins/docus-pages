@@ -17,7 +17,7 @@
   "include-component-in-tag": true,
   "packages": {
     "website": {
-      "path": "website",
+      "package-name": "website",
       "release-type": "simple"
     }
   }
