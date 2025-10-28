@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.4](https://github.com/nelbertnoggins/docus-pages/compare/website-v0.0.3...website-v0.0.4) (2025-10-28)
+
+
+### Bug Fixes
+
+* image references for i18n support ([#22](https://github.com/nelbertnoggins/docus-pages/issues/22)) ([51d46f0](https://github.com/nelbertnoggins/docus-pages/commit/51d46f0072cf565231c9f2644a9f2dc59b03105e))
+
 ## [0.0.3](https://github.com/nelbertnoggins/docus-pages/compare/website-v0.0.2...website-v0.0.3) (2025-10-28)
 
 
