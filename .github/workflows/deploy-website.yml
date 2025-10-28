@@ -28,7 +28,7 @@ jobs:
       - name: checkout repo
         uses: actions/checkout@v5
         with:
-          ref: ${{ github.event.inputs.release-ref || github.ref }}
+          ref: ${{ github.event.inputs.release || github.ref }}
 
       - name: enable corepack
         run: corepack enable
