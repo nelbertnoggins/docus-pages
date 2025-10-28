@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.8](https://github.com/nelbertnoggins/docus-pages/compare/website-v0.0.7...website-v0.0.8) (2025-10-28)
+
+
+### Bug Fixes
+
+* quotes ([#30](https://github.com/nelbertnoggins/docus-pages/issues/30)) ([c8ac591](https://github.com/nelbertnoggins/docus-pages/commit/c8ac591543c45491fdea98219c99bce736bae95f))
+
 ## [0.0.7](https://github.com/nelbertnoggins/docus-pages/compare/website-v0.0.6...website-v0.0.7) (2025-10-28)
 
 
