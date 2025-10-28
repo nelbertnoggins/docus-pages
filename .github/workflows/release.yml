@@ -37,7 +37,7 @@ jobs:
                 workflow_id: 'deploy-website.yml',
                 ref: 'main',
                 inputs: {
-                  release-ref: "${{ needs.release-please.outputs.website--sha }}"
+                  release: ${{ needs.release-please.outputs.website--sha }}
                 },
               })
               console.log(result);
