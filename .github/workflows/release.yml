@@ -35,7 +35,9 @@ jobs:
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 workflow_id: 'deploy-website.yml',
-                ref: "${{ needs.release-please.outputs.website--sha || 'main' }}",
+                ref: 'main',
+                inputs: {
+                  release-ref: "${{ needs.release-please.outputs.website--sha }}"
               })
               console.log(result);
             } catch(error) {
