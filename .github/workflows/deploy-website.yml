@@ -1,6 +1,10 @@
 name: Deploy to GitHub Pages
 on:
   workflow_dispatch:
+    inputs:
+      release-ref:
+        description: 'The git ref (branch or tag) to deploy'
+        required: false
 #  Uncomment the following lines to enable automatic deployment on pushes to main branch
 #  push:
 #    branches:
@@ -22,6 +26,8 @@ jobs:
     steps:
       - name: checkout repo
         uses: actions/checkout@v5
+        with:
+          ref: ${{ github.event.inputs.release-ref || github.ref }}
 
       - name: enable corepack
         run: corepack enable
