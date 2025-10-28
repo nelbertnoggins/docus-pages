@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.6](https://github.com/nelbertnoggins/docus-pages/compare/website-v0.0.5...website-v0.0.6) (2025-10-28)
+
+
+### Bug Fixes
+
+* dispatch syntax ([#26](https://github.com/nelbertnoggins/docus-pages/issues/26)) ([df78741](https://github.com/nelbertnoggins/docus-pages/commit/df78741c4fa8e36657118e55b42022b174daa35b))
+
 ## [0.0.5](https://github.com/nelbertnoggins/docus-pages/compare/website-v0.0.4...website-v0.0.5) (2025-10-28)
 
 
