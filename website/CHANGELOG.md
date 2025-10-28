@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.9](https://github.com/nelbertnoggins/docus-pages/compare/website-v0.0.8...website-v0.0.9) (2025-10-28)
+
+
+### Bug Fixes
+
+* prefix static images ([#32](https://github.com/nelbertnoggins/docus-pages/issues/32)) ([8acd92c](https://github.com/nelbertnoggins/docus-pages/commit/8acd92c149dc2d6f2c5ecf15254e1577afecad43))
+
 ## [0.0.8](https://github.com/nelbertnoggins/docus-pages/compare/website-v0.0.7...website-v0.0.8) (2025-10-28)
 
 
