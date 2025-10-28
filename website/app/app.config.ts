@@ -2,9 +2,6 @@ export default defineAppConfig({
   socials: {
     nuxt: 'https://nuxt.com',
   },
-  github: {
-    rootDir: 'website',
-  },
   toc: {
     bottom: {
       links: [{
