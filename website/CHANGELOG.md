@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.3](https://github.com/nelbertnoggins/docus-pages/compare/website-v0.0.2...website-v0.0.3) (2025-10-28)
+
+
+### Bug Fixes
+
+* workflow_dispatch endpoint ([#18](https://github.com/nelbertnoggins/docus-pages/issues/18)) ([e7f81ca](https://github.com/nelbertnoggins/docus-pages/commit/e7f81ca0cdd06c64d0e5e582e54b7f41df783cae))
+
 ## [0.0.2](https://github.com/nelbertnoggins/docus-pages/compare/website-v0.0.1...website-v0.0.2) (2025-10-28)
 
 
