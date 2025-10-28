@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.7](https://github.com/nelbertnoggins/docus-pages/compare/website-v0.0.6...website-v0.0.7) (2025-10-28)
+
+
+### Bug Fixes
+
+* no hyphens in names ([#28](https://github.com/nelbertnoggins/docus-pages/issues/28)) ([2cd3830](https://github.com/nelbertnoggins/docus-pages/commit/2cd38307a579c0ff76e1c3d7dba324fb80fca381))
+
 ## [0.0.6](https://github.com/nelbertnoggins/docus-pages/compare/website-v0.0.5...website-v0.0.6) (2025-10-28)
 
 
