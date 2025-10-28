@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.5](https://github.com/nelbertnoggins/docus-pages/compare/website-v0.0.4...website-v0.0.5) (2025-10-28)
+
+
+### Bug Fixes
+
+* github api needs branch or tag ([#24](https://github.com/nelbertnoggins/docus-pages/issues/24)) ([80e20a8](https://github.com/nelbertnoggins/docus-pages/commit/80e20a8c0fd36c7d0e942bb58a35700af1580433))
+
 ## [0.0.4](https://github.com/nelbertnoggins/docus-pages/compare/website-v0.0.3...website-v0.0.4) (2025-10-28)
 
 
