@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.2](https://github.com/nelbertnoggins/docus-pages/compare/website-v0.0.1...website-v0.0.2) (2025-10-28)
+
+
+### Bug Fixes
+
+* **website:** remove github config ([#16](https://github.com/nelbertnoggins/docus-pages/issues/16)) ([83097f9](https://github.com/nelbertnoggins/docus-pages/commit/83097f95658fea13d1f2d37b5ebd8714eff166b7))
+
 ## 0.0.1 (2025-10-28)
 
 
