@@ -18,7 +18,7 @@ Ship fast, flexible, and SEO-optimized documentation with beautiful design out o
   ---
   color: neutral
   size: xl
-  to: en/getting-started/installation
+  to: getting-started/installation
   trailing-icon: i-lucide-arrow-right
   ---
   Get started
