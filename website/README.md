@@ -1,16 +1,18 @@
-# Docus i18n Starter
+# Docus Default Starter
 
-> A beautiful, internationalized starter for creating multi-language documentation with Docus
+> A beautiful, minimal starter for creating documentation with Docus
 
-This is the i18n Docus starter template that provides everything you need to build beautiful, multi-language documentation sites with Markdown and Vue components.
+This is the default Docus starter template that provides everything you need to build beautiful documentation sites with Markdown and Vue components.
+
+> [!TIP]
+> If you're looking for i18n support, check out the [i18n starter](https://github.com/nuxt-themes/docus/tree/main/.starters/i18n).
 
 ## ✨ Features
 
-- 🌍 **Internationalization** - Native i18n support for multi-language docs
 - 🎨 **Beautiful Design** - Clean, modern documentation theme
 - 📱 **Responsive** - Mobile-first responsive design  
 - 🌙 **Dark Mode** - Built-in dark/light mode support
-- 🔍 **Search** - Full-text search functionality per language
+- 🔍 **Search** - Full-text search functionality
 - 📝 **Markdown Enhanced** - Extended markdown with custom components
 - 🎨 **Customizable** - Easy theming and brand customization
 - ⚡ **Fast** - Optimized for performance with Nuxt 4
@@ -26,61 +28,19 @@ npm install
 npm run dev
 ```
 
-Your multilingual documentation site will be running at `http://localhost:3000`
-
-## 🌍 Languages
-
-This starter comes pre-configured with:
-- 🇺🇸 **English** (`en`) - Default language
-- 🇫🇷 **Français** (`fr`) - French translation
+Your documentation site will be running at `http://localhost:3000`
 
 ## 📁 Project Structure
 
 ```
 my-docs/
 ├── content/              # Your markdown content
-│   ├── en/              # English content
-│   │   ├── index.md     # English homepage
-│   │   └── docs/        # English documentation
-│   └── fr/              # French content
-│       ├── index.md     # French homepage
-│       └── docs/        # French documentation
+│   ├── index.md         # Homepage
+│   ├── 1.getting-started/  # Getting started section
+│   └── 2.essentials/    # Essential documentation
 ├── public/              # Static assets
-├── nuxt.config.ts       # Nuxt configuration with i18n setup
 └── package.json         # Dependencies and scripts
 ```
-
-### Content Structure
-
-The content is organized by language, making it easy to manage translations:
-
-```
-content/
-├── en/                   # English content
-│   ├── index.md
-│   ├── 1.getting-started/
-│   │   ├── installation.md
-│   │   └── configuration.md
-│   └── 2.essentials/
-│       ├── markdown.md
-│       └── components.md
-└── fr/                   # French content
-    ├── index.md
-    ├── 1.getting-started/
-    │   ├── installation.md
-    │   └── configuration.md
-    └── 2.essentials/
-        ├── markdown.md
-        └── components.md
-```
-
-## 🔗 URL Structure
-
-The i18n starter generates URLs with language prefixes:
-
-- English: `/en/getting-started/installation`
-- French: `/fr/getting-started/installation`
-- Default locale fallback: `/getting-started/installation` (redirects to English)
 
 ## ⚡ Built with
 
@@ -88,7 +48,6 @@ This starter comes pre-configured with:
 
 - [Nuxt 4](https://nuxt.com) - The web framework
 - [Nuxt Content](https://content.nuxt.com/) - File-based CMS
-- [Nuxt i18n](https://i18n.nuxt.com/) - Internationalization
 - [Nuxt UI](https://ui.nuxt.com) - UI components
 - [Nuxt Image](https://image.nuxt.com/) - Optimized images
 - [Tailwind CSS 4](https://tailwindcss.com/) - Utility-first CSS
@@ -110,4 +69,4 @@ The built files will be in the `.output` directory, ready for deployment to any 
 
 ## 📄 License
 
-[MIT License](https://opensource.org/licenses/MIT)
+[MIT License](https://opensource.org/licenses/MIT) 
