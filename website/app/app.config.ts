@@ -16,6 +16,10 @@ export default defineAppConfig({
     },
   },
   ui: {
+    colors: {
+      primary: 'emerald',
+      neutral: 'zinc',
+    },
     pageHero: {
       slots: {
         title: 'font-semibold sm:text-6xl',
@@ -28,5 +32,9 @@ export default defineAppConfig({
         wrapper: 'flex-none',
       },
     },
+  },
+  theme: {
+    radius: 0.25,
+    blackAsPrimary: false
   },
 })
