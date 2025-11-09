@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.0](https://github.com/nelbertnoggins/docus-pages/compare/website-v0.0.9...website-v0.1.0) (2025-11-09)
+
+
+### Features
+
+* latest docus release without i18n ([#34](https://github.com/nelbertnoggins/docus-pages/issues/34)) ([fee81b2](https://github.com/nelbertnoggins/docus-pages/commit/fee81b2ab35008a0ea8aeaf1ba9f68c726cc86e5))
+
 ## [0.0.9](https://github.com/nelbertnoggins/docus-pages/compare/website-v0.0.8...website-v0.0.9) (2025-10-28)
 
 
