@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/nelbertnoggins/docus-pages/compare/website-v0.1.0...website-v0.2.0) (2025-11-09)
+
+
+### Features
+
+* layout change and theme picker added ([#36](https://github.com/nelbertnoggins/docus-pages/issues/36)) ([5e1e5db](https://github.com/nelbertnoggins/docus-pages/commit/5e1e5db16dadda81ccff90c7d97093d4714cb852))
+
 ## [0.1.0](https://github.com/nelbertnoggins/docus-pages/compare/website-v0.0.9...website-v0.1.0) (2025-11-09)
 
 
